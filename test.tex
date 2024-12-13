@@ -1,0 +1,185 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+	
+	\definecolor{chocolate2267451}{RGB}{226,74,51}
+	\definecolor{dimgray85}{RGB}{85,85,85}
+	\definecolor{gainsboro229}{RGB}{229,229,229}
+	\definecolor{lightgray204}{RGB}{204,204,204}
+	\definecolor{mediumpurple152142213}{RGB}{152,142,213}
+	\definecolor{sandybrown25119394}{RGB}{251,193,94}
+	\definecolor{steelblue52138189}{RGB}{52,138,189}
+	
+	\begin{axis}[
+		title={{\rl{زمان اجرای الگوریتم‌های مختلف در DDSIM-HybridQasmSimulator}}},
+		axis line style={black},  % Axis lines in black
+		tick style={black},  % Ticks in black
+		grid=major,  % Add major grid lines
+		legend cell align={left},
+		legend style={
+			fill opacity=0.6,
+			draw opacity=1,
+			text opacity=1,
+			at={(0.97,0.97)},  % Moved to top-right corner
+			anchor=north east,  % Anchored to north east
+			draw=lightgray204,
+			fill=gainsboro229,
+			font=\tiny,
+			scale=0.1,
+		},
+		log basis y={10},
+		tick align=outside,
+		tick pos=left,
+		x grid style={white},
+		xlabel={\scriptsize\textcolor{dimgray85}{\rl{کیوبیت (عدد)}}},  % Adjusted font size
+		xmajorgrids,
+		xmin=0.65, xmax=30.35,
+		xtick style={color=dimgray85},
+		y grid style={white},
+		ylabel={\scriptsize\textcolor{dimgray85}{\rl{زمان اجرا (ثانیه)}}},  % Adjusted font size
+		ymajorgrids,
+		ymin=0.386394055833315, ymax=672.073247544257,
+		ymode=log,
+		ytick style={color=dimgray85},
+		ytick={0.01,0.1,1,10,100,1000,10000},
+		yticklabels={
+			\(\displaystyle {10^{-2}}\),
+			\(\displaystyle {10^{-1}}\),
+			\(\displaystyle {10^{0}}\),
+			\(\displaystyle {10^{1}}\),
+			\(\displaystyle {10^{2}}\),
+			\(\displaystyle {10^{3}}\),
+			\(\displaystyle {10^{4}}\)
+		},
+		width=12cm,  % Increased plot width
+		height=8cm,  % Increased plot height
+		]
+		\addplot [semithick, chocolate2267451, dash pattern=on 1.5pt off 2.475pt, mark=*, mark size=3, mark options={solid}]
+		table {%
+			2 0.624351973123403
+			3 0.587226571028374
+			4 0.639687958981054
+			5 0.619755191304612
+			6 0.585053854398514
+			7 0.671001181529464
+			8 0.688212458130045
+			9 0.865737236227547
+			10 1.16426249816701
+			11 1.82332075416508
+			12 3.40032552219634
+			13 7.2008582102126
+			14 17.2884310919968
+			15 46.7013410651168
+			16 138.467532937302
+			17 478.769336687378
+			18 0.628996614282199
+			19 0.584367383004651
+			20 0.642880814957777
+			21 0.619736103887262
+			22 0.600376233852754
+			23 0.604787000671798
+			24 0.62276524286897
+			25 0.632204662655613
+			26 0.580563435801991
+			27 0.575382296755607
+			28 0.56276863889532
+			29 0.62067153060571
+		};
+		\addlegendentry{Deutsch-Jozsa}
+		\addplot [semithick, steelblue52138189, dash pattern=on 1.5pt off 2.475pt, mark=*, mark size=3, mark options={solid}]
+		table {%
+			2 0.60285063870469
+			3 0.600260884802473
+			4 0.638334392014113
+			5 0.598250783015353
+			6 0.617786608733121
+			7 0.619974862412866
+			8 0.588699307354206
+			9 0.611531290979295
+			10 0.605513690623684
+			11 0.580751838099918
+			12 0.592331817723523
+			13 0.542401294394632
+			14 0.607412334625192
+			15 0.573584917962688
+			16 0.615365514653132
+			17 0.632265841554651
+			18 0.599264861325172
+			19 0.592645271723382
+			20 0.603146299745202
+			21 0.575124103615848
+			22 0.572697727779838
+			23 0.611452340047042
+			24 0.602243580089951
+			25 0.635442746205395
+			26 0.619154398598658
+			27 0.578709048600804
+			28 0.611623078301018
+			29 0.604880728725514
+		};
+		\addlegendentry{Bernstein-Vazirani}
+		\addplot [semithick, mediumpurple152142213, dash pattern=on 1.5pt off 2.475pt, mark=*, mark size=3, mark options={solid}]
+		table {%
+			2 1.00911756953865
+			3 0.611596000694421
+			4 0.579480457069372
+			5 0.609352641099091
+			6 0.629401827041493
+			7 0.631334699781108
+			8 0.604965763702127
+			9 0.61228514894284
+			10 0.606711820351907
+			11 0.595320903393228
+			12 0.579853382860739
+			13 0.588684780338878
+			14 0.595426148802854
+			15 0.623616395270865
+			16 0.658992755910732
+			17 0.702589640864012
+			18 0.773739961958676
+			19 0.986492842486674
+			20 1.1602769220111
+			21 1.82148335044994
+			22 2.39820758057485
+			23 4.64243639060827
+			24 9.72381489789753
+			25 18.2188722699261
+			26 37.1238993266756
+			27 64.7367386392593
+			28 146.507921181309
+			29 280.013983983125
+		};
+		\addlegendentry{Quantum Fourier Transform}
+		\addplot [semithick, sandybrown25119394, dash pattern=on 1.5pt off 2.475pt, mark=*, mark size=3, mark options={solid}]
+		table {%
+			2 0.629671428326495
+			3 0.588378432436615
+			4 0.587607761607682
+			5 0.593048585576998
+			6 0.602658791951483
+			7 0.626115293253958
+			8 0.581245227489059
+			9 0.570370809023961
+			10 0.576834764071873
+			11 0.605092758660738
+			12 0.609629279306946
+			13 0.643182454265806
+			14 0.580631413220385
+			15 0.606724949611477
+			16 0.612499732448365
+			17 0.572249124843782
+			18 0.598423668892132
+			19 0.596486491787529
+			20 0.579080697357764
+			21 0.590797469093473
+			22 0.598680746019255
+			23 0.571506214619014
+			24 0.60838747099698
+			25 0.631307124996174
+			26 0.639951661546553
+			27 0.609358595198787
+			28 0.583226825085147
+			29 0.599240020100605
+		};
+		\addlegendentry{Grover}
+	\end{axis};
+\end{tikzpicture}

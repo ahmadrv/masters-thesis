@@ -1,0 +1,168 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+	\definecolor{chocolate2267451}{RGB}{226,74,51}
+	\definecolor{dimgray85}{RGB}{85,85,85}
+	\definecolor{gainsboro229}{RGB}{229,229,229}
+	\definecolor{gray119}{RGB}{119,119,119}
+	\definecolor{lightgray204}{RGB}{204,204,204}
+	\definecolor{mediumpurple152142213}{RGB}{152,142,213}
+	\definecolor{sandybrown25119394}{RGB}{251,193,94}
+	\definecolor{steelblue52138189}{RGB}{52,138,189}
+
+	\begin{axis}[
+    axis line style={black},
+    tick style={black},
+    grid=major,
+    legend cell align={left},
+    legend style={
+        fill opacity=0.6,
+        draw opacity=1,
+        text opacity=1,
+        at={(0.97,0.97)},
+        anchor=north east,
+        draw=lightgray204,
+        fill=gainsboro229,
+        font=\tiny,
+        scale=0.1,
+      },
+    log basis y={10},
+    tick align=outside,
+    tick pos=left,
+    x grid style={white},
+    xlabel={\scriptsize\textcolor{black}{\rl{کیوبیت (عدد)}}},
+    xmajorgrids,
+    xmin=1, xmax=30,
+    xtick distance=3,
+    width=15cm,
+    height=8cm,
+    xtick style={color=dimgray85},
+    y grid style={gray119},
+    ylabel={\scriptsize\textcolor{black}{\rl{زمان اجرا (ثانیه)}}},
+    ymajorgrids,
+    ymin=0, ymax=3601,
+    ymode=log,
+    ytick style={color=dimgray85},
+    ytick={1,10,100,1000,3600},
+    yticklabels={
+        \(\displaystyle {10^{0}}\),
+        \(\displaystyle {10^{1}}\),
+        \(\displaystyle {10^{2}}\),
+        \(\displaystyle {10^{3}}\),
+        \(\displaystyle {3600}\),
+      },
+    tick label style={font=\scriptsize}
+  ]
+		\addplot [semithick, chocolate2267451, dash pattern=on 1.5pt off 2.475pt, mark=*, mark size=3, mark options={solid}]
+		table {%
+				2 0.597868566396571
+				6 0.937824552238864
+				7 1.92104576240808
+				8 5.9681933120616
+				9 21.3897546774469
+				10 82.1233237829238
+				11 334.310288762949
+			};
+		\addlegendentry{Deutsch-Jozsa (balanced)}
+		\addplot [semithick, steelblue52138189, dash pattern=on 1.5pt off 2.475pt, mark=*, mark size=3, mark options={solid}]
+		table {%
+				2 0.693353301867182
+				3 0.636428528960232
+				4 0.543177408027685
+				5 0.621790375881577
+				6 0.60925448196725
+				7 0.576636772212676
+				8 0.610487772751591
+				9 0.585676123126805
+				10 0.584691701436717
+				11 0.594200421498198
+				12 0.604266198276102
+				13 0.608911082266084
+				14 0.626623257599496
+				15 0.59508719711376
+				16 0.573776808624804
+				17 0.606440932432929
+				18 0.620692065670245
+				19 0.623131562941646
+				20 0.710584894287226
+				21 0.703167336558315
+				22 0.953626509743707
+				23 1.10023575912188
+				24 1.64030202724372
+				25 2.70312382158595
+				26 4.75195973066357
+			};
+		\addlegendentry{Deutsch-Jozsa (constant)}
+		\addplot [semithick, mediumpurple152142213, dash pattern=on 1.5pt off 2.475pt, mark=*, mark size=3, mark options={solid}]
+		table {%
+				2 0.581378518886505
+				3 0.623281716272181
+				4 0.596886265077828
+				5 0.599966782263141
+				6 0.584264622743482
+				7 0.566233540964989
+				8 0.542885204059641
+				9 0.587834644726815
+				10 0.588105452066124
+				11 0.641619736953297
+				12 0.595353376518755
+				13 0.627206856614325
+				14 0.651481216905507
+				15 0.658358243154701
+				16 0.646803615414515
+				17 0.681878867209783
+				18 0.700563510029233
+				19 0.744875336952375
+				20 0.80435271212688
+				21 1.00897318390555
+				22 1.27306003520674
+				23 1.75283078873344
+				24 2.79774983295597
+				25 4.9588869399558
+			};
+		\addlegendentry{Bernstein-Vazirani (basic)}
+		\addplot [semithick, gray119, dash pattern=on 1.5pt off 2.475pt, mark=*, mark size=3, mark options={solid}]
+		table {%
+				2 0.57742029532998
+				3 0.641968571283478
+				4 0.684351089396766
+				5 2.83788407148147
+				6 152.468731147669
+				12 0.966184949275977
+				13 1100.93839546889
+				16 0.713509314210841
+				17 113.161398924993
+				20 1.34196857035549
+				23 4.95272919842685
+			};
+		\addlegendentry{Quantum Fourier Transform (basic)}
+		\addplot [semithick, sandybrown25119394, dash pattern=on 1.5pt off 2.475pt, mark=*, mark size=3, mark options={solid}]
+		table {%
+				2 0.605223086361549
+				3 0.604693105969172
+				4 0.609341761052035
+				5 0.579868231132997
+				6 0.617290399830352
+				7 0.569949517674462
+				8 0.618231423822473
+				9 0.590279338170018
+				10 0.620839491666611
+				11 0.580937174826352
+				12 0.606015417502191
+				13 0.584184406072495
+				14 0.574784896681935
+				15 0.598159480306858
+				16 0.711619082398483
+				17 0.704890572807915
+				18 0.679538464290166
+				19 0.826914913741584
+				20 1.13363334540886
+				21 1.40032311181396
+				22 2.42980830508291
+				23 3.63360355332663
+				24 7.82735892188922
+				25 12.6515511293194
+			};
+		\addlegendentry{Grover (basic)}
+	\end{axis}
+\end{tikzpicture}

@@ -1,0 +1,26 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces نمودار زمان اجرا بر حسب تعداد کیوبیت در الگوریتم‌های مختلف در شبیه‌ساز Cirq}}{7}{figure.caption.9}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces نمودار مدار کوانتومی الگوریتم \lr {Deutsch-Jozsa} }}{41}{figure.caption.93}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces نمودار مدار کوانتومی الگوریتم \lr {Bernstein-Vazirani} }}{43}{figure.caption.98}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces نمودار مدار کوانتومی الگوریتم \lr {Simon} }}{45}{figure.caption.103}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces نمودار مدار کوانتومی الگوریتم \lr {QFT} }}{47}{figure.caption.108}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces نمودار مدار کوانتومی الگوریتم \lr {Grover} }}{48}{figure.caption.113}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces نمودار مدار کوانتومی الگوریتم \lr {Shor} }}{50}{figure.caption.118}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces نمودار روابط پلتفرم‌ها و اجزای آن‌ها (قسمت‌های خاکستری در پژوهش ما مورد بحث و بررسی نبوده‌اند.) }}{55}{figure.caption.123}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces نمودار زمان اجرا بر حسب تعداد کیوبیت الگوریتم‌های مختلف در \lr {Aer Simulator} }}{57}{figure.caption.128}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces نمودار مصرف حافظه بر حسب تعداد کیوبیت الگوریتم‌های مختلف \lr {Aer Simulator} }}{57}{figure.caption.128}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces نمودار زمان اجرا بر حسب تعداد کیوبیت الگوریتم‌های مختلف در \lr {Qasm Simulator} }}{59}{figure.caption.130}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces نمودار مصرف حافظه بر حسب تعداد کیوبیت الگوریتم‌های مختلف در \lr {Qasm Simulator} }}{59}{figure.caption.130}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces نمودار زمان اجرا بر حسب تعداد کیوبیت الگوریتم‌های مختلف در \lr {DDSIM Qasm Simulator} }}{62}{figure.caption.134}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces نمودار مصرف حافظه بر حسب تعداد کیوبیت الگوریتم‌های مختلف در \lr {DDSIM Qasm Simulator} }}{62}{figure.caption.134}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces نمودار زمان اجرا بر حسب تعداد کیوبیت الگوریتم‌های مختلف در \lr {DDSIM Hybrid Qasm Simulator} }}{64}{figure.caption.137}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces نمودار مصرف حافظه بر حسب تعداد کیوبیت الگوریتم‌های مختلف در \lr {DDSIM Hybrid Qasm Simulator} }}{64}{figure.caption.137}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces نمودار زمان اجرا بر حسب تعداد کیوبیت الگوریتم‌های مختلف در \lr {Cirq Pure} }}{67}{figure.caption.141}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces نمودار مصرف حافظه بر حسب تعداد کیوبیت الگوریتم‌های مختلف در \lr {Cirq Pure} }}{67}{figure.caption.141}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces نمودار زمان اجرا بر حسب تعداد کیوبیت الگوریتم‌های مختلف در \lr {QSim Simulator} }}{69}{figure.caption.145}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces نمودار مصرف حافظه بر حسب تعداد کیوبیت الگوریتم‌های مختلف در \lr {QSim Simulator} }}{69}{figure.caption.145}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces نمودار زمان اجرای الگوریتم‌های بررسی‌شده بر روی تمامی شبیه‌سازها.\newline \textit {توضیحات: دلیل عدم مشاهد‌هٔ واضح نمودار بعضی از شبیه‌سازها، هم‌پوشانی و شباهت رفتاری آن‌ها با دیگر شبیه‌سازهاست. محور افقی نشان‌دهندهٔ تعداد کیوبیت است.} }}{72}{figure.caption.150}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces نمودار مصرف حافظهٔ اجرای الگوریتم‌های بررسی‌شده بر روی تمامی شبیه‌سازها.\newline \textit {توضیحات: دلیل عدم مشاهد‌هٔ واضح نمودار بعضی از شبیه‌سازها، هم‌پوشانی و شباهت رفتاری آن‌ها با دیگر شبیه‌سازهاست. محور افقی نشان‌دهندهٔ تعداد کیوبیت است.} }}{73}{figure.caption.151}%

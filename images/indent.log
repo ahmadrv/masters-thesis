@@ -1,0 +1,25 @@
+INFO:  ANSI Code Page: 1252
+INFO:  latexindent.exe version 3.24.4, 2024-07-18, a script to indent .tex files
+       latexindent.exe lives here: C:/Program Files/latexindent/
+       Thu Oct 31 21:22:18 2024
+       Filename: c:\Users\ahmad\Documents\Master Project\Thesis\Persian TeX\images\Cirq_qsimcirq_QSimSimulator_runtime.tex
+INFO:  Processing switches:
+INFO:  Directory for backup files and log file indent.log:
+       c:\Users\ahmad\Documents\Master Project\Thesis\Persian TeX\images
+INFO:  YAML settings read: defaultSettings.yaml
+       Reading defaultSettings.yaml from C:/Program Files/latexindent/defaultSettings.yaml
+       Reading defaultSettings.yaml (2nd attempt) from C:/Program Files/latexindent/../../texmf-dist/scripts/latexindent/defaultSettings.yaml
+       and then, if necessary, C:/Program Files/latexindent/LatexIndent/defaultSettings.yaml
+INFO:  YAML reading settings
+       Home directory is C:\Users\ahmad
+       latexindent.pl didn't find indentconfig.yaml or .indentconfig.yaml
+       see all possible locations: https://latexindentpl.readthedocs.io/en/latest/sec-appendices.html#indentconfig-options)
+INFO:  Phase 1: searching for objects
+INFO:  Phase 2: finding surrounding indentation
+INFO:  Phase 3: indenting objects
+INFO:  Phase 4: final indentation check
+INFO:  Output routine:
+       Not outputting to file; see -w and -o switches for more options.
+       --------------
+INFO:  Please direct all communication/issues to:
+        https://github.com/cmhughes/latexindent.pl
