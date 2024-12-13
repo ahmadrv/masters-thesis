@@ -1,0 +1,174 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+	\definecolor{chocolate2267451}{RGB}{226,74,51}
+	\definecolor{dimgray85}{RGB}{85,85,85}
+	\definecolor{gainsboro229}{RGB}{229,229,229}
+	\definecolor{gray119}{RGB}{119,119,119}
+	\definecolor{lightgray204}{RGB}{204,204,204}
+	\definecolor{mediumpurple152142213}{RGB}{152,142,213}
+	\definecolor{sandybrown25119394}{RGB}{251,193,94}
+	\definecolor{steelblue52138189}{RGB}{52,138,189}
+	\definecolor{yellowgreen14218666}{RGB}{142,186,66}
+
+	\begin{axis}[
+			axis line style={black},
+			tick style={black},
+			grid=major,
+			legend cell align={left},
+			legend style={
+					fill opacity=0.6,
+					draw opacity=1,
+					text opacity=1,
+					at={(0.03,0.97)},
+					anchor=north west,
+					draw=lightgray204,
+					fill=gainsboro229,
+					font=\tiny,
+					scale=0.1,
+				},
+			log basis y={10},
+			tick align=outside,
+			tick pos=left,
+			x grid style={white},
+			xlabel={\scriptsize\textcolor{black}{\rl{کیوبیت (عدد)}}},
+			xmajorgrids,
+			xmin=1, xmax=30,
+			xtick distance=3,
+			width=15cm,
+			height=8cm,
+			xtick style={color=dimgray85},
+			y grid style={gray119},
+			ylabel={\scriptsize\textcolor{black}{\rl{زمان اجرا (ثانیه)}}},
+			ymajorgrids,
+			ymin=0, ymax=3601,
+			ymode=log,
+			ytick style={color=dimgray85},
+			ytick={1,10,100,1000,3600},
+			yticklabels={
+					\(\displaystyle {10^{0}}\),
+					\(\displaystyle {10^{1}}\),
+					\(\displaystyle {10^{2}}\),
+					\(\displaystyle {10^{3}}\),
+					\(\displaystyle {3600}\),
+				},
+			tick label style={font=\scriptsize}
+		]
+		\addplot [semithick, chocolate2267451, dash pattern=on 1.5pt off 2.475pt, mark=*, mark size=3, mark options={solid}]
+		table {images/data/runtime/cirq_qsim/deutsch_jozsa_balanced.dat};
+		\addlegendentry{Deutsch-Jozsa (balanced)}
+		\addplot [semithick, steelblue52138189, dash pattern=on 1.5pt off 2.475pt, mark=*, mark size=3, mark options={solid}]
+		table {images/data/runtime/cirq_qsim/deutsch_jozsa_constant.dat};
+		\addlegendentry{Deutsch-Jozsa (constant)}
+		\addplot [semithick, mediumpurple152142213, dash pattern=on 1.5pt off 2.475pt, mark=*, mark size=3, mark options={solid}]
+		table {
+				2 1.55111546038381
+				3 1.50695567533804
+				4 1.51181218834897
+				5 1.51464187280962
+				6 1.52380721886995
+				7 1.51529367148997
+				8 1.53139155013837
+				9 1.51165496264338
+				10 1.50097822489768
+				11 1.51612054101059
+				12 1.51116592046555
+				13 1.47256918211992
+				14 1.51842625945439
+				15 1.50134288833993
+				16 1.48653132895541
+				17 1.50891696313623
+				18 1.48235721348221
+				19 1.54085153044674
+				20 1.60906062940075
+				21 1.7177930204441
+				22 1.7985211779931
+				23 2.06038784489128
+				24 2.57612442741446
+				25 3.85340699910474
+				26 6.22929734349159
+				27 11.5227746645348
+				28 22.1992395502035
+			};
+		\addlegendentry{Bernstein-Vazirani (basic)}
+		\addplot [semithick, gray119, dash pattern=on 1.5pt off 2.475pt, mark=*, mark size=3, mark options={solid}]
+		table {%
+				2 1.47469689005387
+				3 1.53536495702877
+				4 1.52132963431181
+				5 1.51612429182836
+				6 1.54514940888184
+				7 1.49397410585267
+				8 1.54250046019245
+				9 1.48575071828181
+				10 1.49955046621614
+				11 1.4835540165596
+				12 1.4858006085303
+				13 1.52359724167859
+				14 1.56937247413615
+				15 1.54912846805565
+				16 1.6208181396218
+				17 1.61021849819933
+				18 1.6411516166791
+				19 1.77606479335952
+				20 2.15106979207412
+				21 2.91118836203908
+				22 4.49280839343821
+				23 8.00279434665248
+				24 15.5253147610872
+				25 32.1465738220864
+				26 67.7212941223689
+				27 143.27856444503
+				28 307.567094472348
+				29 658.872946257044
+			};
+		\addlegendentry{Quantum Fourier Transform (basic)}
+		\addplot [semithick, sandybrown25119394, dash pattern=on 1.5pt off 2.475pt, mark=*, mark size=3, mark options={solid}]
+		table {%
+				2 3.44430732137782
+				3 3.59787604090538
+				4 3.70602299535138
+				5 3.80609971875589
+				6 4.01626761739972
+				7 4.31317286717936
+				8 5.19171175387761
+				9 9.21379853266907
+				10 29.5011547672786
+				11 123.494304288186
+				12 496.86252527055
+				13 2284.00421465728
+			};
+		\addlegendentry{Simon (basic)}
+		\addplot [semithick, yellowgreen14218666, dash pattern=on 1.5pt off 2.475pt, mark=*, mark size=3, mark options={solid}]
+		table {%
+				2 1.52815097495671
+				3 1.51165225584881
+				4 1.58457630371006
+				5 1.51673414586194
+				6 1.51390678347388
+				7 1.54431734997241
+				8 1.52163605791351
+				9 1.53209581193725
+				10 1.53912434400251
+				11 1.51868616045619
+				12 1.5979460635722
+				13 1.59115237121691
+				14 1.56375546973687
+				15 1.55641713345755
+				16 1.59736939191585
+				17 1.58652630722103
+				18 1.60781525396282
+				19 1.59321604674006
+				20 1.58869839793681
+				21 1.71085235337714
+				22 1.77414647387295
+				23 2.04218626021559
+				24 2.42909801665837
+				25 3.31761963873009
+				26 5.15552671574137
+				27 9.04260184012829
+				28 16.7487040038286
+			};
+		\addlegendentry{Grover (basic)}
+	\end{axis}
+\end{tikzpicture}

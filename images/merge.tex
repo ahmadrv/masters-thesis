@@ -1,0 +1,121 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+	\definecolor{chocolate2267451}{RGB}{226,74,51}
+	\definecolor{dimgray85}{RGB}{85,85,85}
+	\definecolor{gainsboro229}{RGB}{229,229,229}
+	\definecolor{gray119}{RGB}{119,119,119}
+	\definecolor{lightgray204}{RGB}{204,204,204}
+	\definecolor{mediumpurple152142213}{RGB}{152,142,213}
+	\definecolor{sandybrown25119394}{RGB}{251,193,94}
+	\definecolor{steelblue52138189}{RGB}{52,138,189}
+	\definecolor{yellowgreen14218666}{RGB}{142,186,66}
+
+	\begin{axis}[
+    axis line style={black},
+    tick style={black},
+    grid=major,
+    legend cell align={left},
+    legend style={
+        fill opacity=0.6,
+        draw opacity=1,
+        text opacity=1,
+        at={(0.03,0.97)},
+        anchor=north west,
+        draw=lightgray204,
+        fill=gainsboro229,
+        font=\tiny, % \fontsize{4}{5}\selectfont
+        scale=0.025,
+      },
+    log basis y={10},
+    tick align=outside,
+    tick pos=left,
+    x grid style={white},
+    xlabel={\scriptsize\textcolor{black}{\rl{کیوبیت (عدد)}}},
+    xmajorgrids,
+    xmin=1, xmax=30,
+    xtick distance=3,
+    width=15cm,
+    height=8cm,
+    xtick style={color=dimgray85},
+    y grid style={gray119},
+    ylabel={\scriptsize\textcolor{black}{\rl{زمان اجرا (ثانیه)}}},
+    ymajorgrids,
+    ymin=0, ymax=3601,
+    ymode=log,
+    ytick style={color=dimgray85},
+    ytick={1,10,100,1000,3600},
+    yticklabels={
+        \(\displaystyle {10^{0}}\),
+        \(\displaystyle {10^{1}}\),
+        \(\displaystyle {10^{2}}\),
+        \(\displaystyle {10^{3}}\),
+        \(\displaystyle {3600}\),
+      },
+    tick label style={font=\scriptsize}
+  ]
+		
+		\addlegendimage{very thick, chocolate2267451}
+		\addlegendentry{Qsim}
+
+		\addlegendimage{very thick, steelblue52138189}
+		\addlegendentry{Cirq}
+
+		\addlegendimage{mark=*, black}
+		\addlegendentry{Deutsch-Jozsa (balanced)}
+
+		\addlegendimage{mark=square*, black}
+		\addlegendentry{Deutsch-Jozsa (constant)}
+
+		\addlegendimage{mark=triangle*,black}
+		\addlegendentry{Bernstein-Vazirani (basic)}
+
+		\addlegendimage{mark=diamond*,black}
+		\addlegendentry{Grover (basic)}
+
+		\addlegendimage{mark=pentagon*,black}
+		\addlegendentry{Quantum Fourier Transform (basic)}
+
+		\addlegendimage{mark=halfcircle*,black}
+		\addlegendentry{Simon (basic)}
+
+  		\addplot [semithick, chocolate2267451, dash pattern=on 1.5pt off 2.475pt, mark=*, mark size=1.5, mark options={solid}]
+		table {images/data/runtime/qsim/qsim_deutsch_jozsa_balanced.dat};
+
+		\addplot [semithick, chocolate2267451, dash pattern=on 1.5pt off 2.475pt, mark=square*, mark size=1.5, mark options={solid}]
+		table {images/data/runtime/qsim/qsim_deutsch_jozsa_constant.dat};
+
+		\addplot [semithick, chocolate2267451, dash pattern=on 1.5pt off 2.475pt, mark=triangle*, mark size=1.5, mark options={solid}]
+		table {images/data/runtime/qsim/qsim_bernstein_vazirani.dat};
+
+		\addplot [semithick, chocolate2267451, dash pattern=on 1.5pt off 2.475pt, mark=diamond*, mark size=1.5, mark options={solid}]
+		table {images/data/runtime/qsim/qsim_grover.dat};
+
+		\addplot [semithick, chocolate2267451, dash pattern=on 1.5pt off 2.475pt, mark=pentagon*, mark size=1.5, mark options={solid}]
+		table {images/data/runtime/qsim/qsim_qft.dat};
+
+		\addplot [semithick, chocolate2267451, dash pattern=on 1.5pt off 2.475pt, mark=halfcircle*, mark size=1.5, mark options={solid}]
+		table {images/data/runtime/qsim/qsim_simon.dat};
+		
+		% ------------------------------------------------------------------------------------------------------------------------------
+
+		\addplot [semithick, steelblue52138189, dash pattern=on 1.5pt off 2.475pt, mark=*, mark size=1.5, mark options={solid}]
+		table {images/data/runtime/cirq/deutsch_jozsa_balanced.dat};
+
+		\addplot [semithick, steelblue52138189, dash pattern=on 1.5pt off 2.475pt, mark=square*, mark size=1.5, mark options={solid}]
+		table {images/data/runtime/cirq/deutsch_jozsa_constant.dat};
+
+		\addplot [semithick, steelblue52138189, dash pattern=on 1.5pt off 2.475pt, mark=triangle*, mark size=1.5, mark options={solid}]
+		table {images/data/runtime/cirq/bernstein_vazirani.dat};
+
+		\addplot [semithick, steelblue52138189, dash pattern=on 1.5pt off 2.475pt, mark=diamond*, mark size=1.5, mark options={solid}]
+		table {images/data/runtime/cirq/grover.dat};
+
+		\addplot [semithick, steelblue52138189, dash pattern=on 1.5pt off 2.475pt, mark=pentagon*, mark size=1.5, mark options={solid}]
+		table {images/data/runtime/cirq/qft.dat};
+
+		\addplot [semithick, steelblue52138189, dash pattern=on 1.5pt off 2.475pt, mark=halfcircle*, mark size=1.5, mark options={solid}]
+		table {images/data/runtime/cirq/simon.dat};
+
+	\end{axis}
+\end{tikzpicture}
